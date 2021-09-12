@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id"
+        content="820851544345-7khg2epl0o9a4f4oscfkr1jme6g8174m.apps.googleusercontent.com">
+    <title>AUTH</title>
+</head>
+
+<body>
+    <h2>google  sigin</h2>
+    
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+
+
+
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    
+   
+    
+
+  <a href="#" onclick="signOut();">Sign out</a>
+
+
+  <div>
+      <form>
+        <input type="text" name= "correo" placeholder="correo"/>
+        <input type="text" name= "password" placeholder="password"/>
+        <button type = "submit">Ingresar</button>
+      </form>
+      
+  </div>
+
+
+  <script src="js/auth.js"></script>
+    <script>
+        function signOut() {
+            var auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function () {
+                console.log('User signed out.');
+            });
+        }
+    </script>
+    
+  
+
+
+</body>
+
+</html>
