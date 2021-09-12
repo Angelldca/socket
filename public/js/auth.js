@@ -5,7 +5,7 @@ const formulario = document.querySelector("form");
 
 var url = (window.location.hostname.includes('localhost'))
     ? 'http://localhost:8080/api/auth/login'
-    : 'https://rest-server-angelldca.herokuapp.com/api/auth/login';
+    : 'https://angelldca-socket-chat.herokuapp.com/api/auth/login';
 
 formulario.addEventListener('submit', ev=>{
     ev.preventDefault();

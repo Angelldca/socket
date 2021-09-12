@@ -6,7 +6,7 @@ let  socket = null;
 
 var url = (window.location.hostname.includes('localhost'))
     ? 'http://localhost:8080/api/auth?prod=algo'
-    : 'https://rest-server-angelldca.herokuapp.com/api/auth?prod=algo';
+    : 'https://angelldca-socket-chat.herokuapp.com/api/auth?prod=algo';
 
 
 
